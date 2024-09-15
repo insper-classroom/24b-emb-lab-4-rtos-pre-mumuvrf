@@ -29,9 +29,9 @@ void led_2_task(void *p) {
 
   int delay = 250;
   while (true) {
-    gpio_put(LED_PIN_R, 1);
+    gpio_put(LED_PIN_G, 1);
     vTaskDelay(pdMS_TO_TICKS(delay));
-    gpio_put(LED_PIN_R, 0);
+    gpio_put(LED_PIN_G, 0);
     vTaskDelay(pdMS_TO_TICKS(delay));
   }
 }
